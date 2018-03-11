@@ -1,0 +1,28 @@
+{
+  "name": "google-analyticsreporting",
+  "version": "1.0.0",
+  "description": "server-side reporting module for google analytics reporting api v4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesseCastro/google-analyticsreporting.git"
+  },
+  "keywords": [
+    "google",
+    "analytics",
+    "ga",
+    "analyticsreporting"
+  ],
+  "author": "Jesse R. Castro <jesse.r.castro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesseCastro/google-analyticsreporting/issues"
+  },
+  "homepage": "https://github.com/JesseCastro/google-analyticsreporting#readme",
+  "dependencies": {
+    "googleapis": "^27.0.0"
+  }
+}

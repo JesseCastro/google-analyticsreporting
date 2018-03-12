@@ -23,9 +23,10 @@ module.exports = {
 
   makecsv: function(response){
     var reports = response.data.reports;
+    var csv = "";
     for(var i = 0; i < reports.length; i++){
       var report = reports[i];
-      var csv = report.columnHeader.dimensions.join(',');
+      csv = report.columnHeader.dimensions.join(',');
       for(var j = 0; j < report.columnHeader.metricHeader.metricHeaderEntries.length; j++){
         var metric = report.columnHeader.metricHeader.metricHeaderEntries[j];
         csv += ',' + metric.name;
@@ -37,7 +38,7 @@ module.exports = {
           csv += ',' + row.metrics[l].values.join(',');
         }
       }
-      return csv;
     }
+    return csv;
   },
 }

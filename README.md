@@ -31,7 +31,7 @@ const reportRequests = {
   reportRequests:
     [
       {
-        viewId: '119003758',
+        viewId: '<YOUR VIEW ID HERE>',
         dateRanges:
           [
             {

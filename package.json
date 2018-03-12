@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/JesseCastro/google-analyticsreporting#readme",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "googleapis": "^27.0.0"
   }
 }

@@ -38,6 +38,7 @@ module.exports = {
           csv += ',' + row.metrics[l].values.join(',');
         }
       }
+      csv += '\n';
     }
     return csv;
   },

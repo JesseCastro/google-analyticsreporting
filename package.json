@@ -1,6 +1,6 @@
 {
   "name": "google-analyticsreporting",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "server-side reporting module for google analytics reporting api v4",
   "main": "index.js",
   "scripts": {

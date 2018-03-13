@@ -44,7 +44,7 @@ module.exports = {
   },
 
   report: function(reportObj){
-    const reportRequests = {
+    const report = {
       reportRequests:
         [
           {
@@ -63,16 +63,17 @@ module.exports = {
     };
     for(var i = 0; i < reportObj.metrics.length; i++){
       var metric = reportObj.metrics[i];
-      reportRequests[0].metrics.push({
+      report.reportRequests[0].metrics.push({
         expression: metric,
       });
     }
     for(var j = 0; j < reportObj.metrics.length; j++){
       var dimension = reportObj.dimensions[j];
-      reportRequests[0].dimensions.push({
+      report.reportRequests[0].dimensions.push({
         name: metric,
       });
     }
 
+    return report;
   },
 }

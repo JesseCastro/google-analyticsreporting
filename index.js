@@ -70,7 +70,7 @@ module.exports = {
     for(var j = 0; j < reportObj.metrics.length; j++){
       var dimension = reportObj.dimensions[j];
       report.reportRequests[0].dimensions.push({
-        name: metric,
+        name: dimension,
       });
     }
 

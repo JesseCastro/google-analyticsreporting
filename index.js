@@ -67,7 +67,7 @@ module.exports = {
         expression: metric,
       });
     }
-    for(var j = 0; j < reportObj.metrics.length; j++){
+    for(var j = 0; j < reportObj.dimensions.length; j++){
       var dimension = reportObj.dimensions[j];
       report.reportRequests[0].dimensions.push({
         name: dimension,

@@ -42,4 +42,37 @@ module.exports = {
     }
     return csv;
   },
+
+  report: function(reportObj){
+    const reportRequests = {
+      reportRequests:
+        [
+          {
+            viewId: reportObj.viewId,
+            dateRanges:
+              [
+                {
+                  endDate: reportObj.startDate,
+                  startDate: reportObj.endDate,
+                },
+              ],
+              metrics:[],
+              dimensions:[],
+          },
+        ],
+    };
+    for(var i = 0; i < reportObj.metrics.length; i++){
+      var metric = reportObj.metrics[i];
+      reportRequests[0].metrics.push({
+        expression: metric,
+      });
+    }
+    for(var j = 0; j < reportObj.metrics.length; j++){
+      var dimension = reportObj.dimensions[j];
+      reportRequests[0].dimensions.push({
+        name: metric,
+      });
+    }
+
+  },
 }

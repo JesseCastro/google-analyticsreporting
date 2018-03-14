@@ -18,7 +18,7 @@ npm install --save google-analyticsreporting
 You'll need to include the JSON from the Prerequisites section like so:
 
 ```
-var key = ('./path/to/secret.json');
+var key = require('./path/to/secret.json');
 ```
 First you'll need to run the auth command, then you can `then` into the `query` function.
 
